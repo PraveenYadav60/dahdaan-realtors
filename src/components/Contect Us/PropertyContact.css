@@ -1,0 +1,150 @@
+/* ── TOP SECTION CONTAINER ── */
+.contact-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px 50px;
+}
+
+/* .contact-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 60px;
+} */
+.contact-section {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+}
+.contact-heading {
+  font-size: 38px;
+  font-weight: 800;
+  color: #1a1a2e;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.contact-subheading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.contact-des {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* ── BOTTOM MAP SECTION ── */
+.map-canvas-wrapper {
+  width: 68%;
+  height: 370px;
+  margin-left:135px;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  background-color: #9aa0a6;
+  background-image: url('map.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Floating overlay location detail window */
+.location-float-card {
+  position: absolute;
+  bottom: 40px;
+  left: 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 5px;
+  width: 30%;
+  height: 40%;
+  max-width: 320px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+.location-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 12px;
+}
+
+.green-status-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #0ea5e9; /* Design matching layout dot color */
+  border-radius: 50%;
+}
+
+.location-float-card h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.location-float-card p {
+  font-size: 9px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.directions-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #0ea5e9;
+  font-size: 11.5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.directions-link:hover {
+  text-decoration: underline;
+}
+
+/* Map Pins setup layered over static image assets */
+.map-point-wrapper {
+  position: absolute;
+  transform: translate(-50%, -100%);
+}
+
+.central-blue-pin {
+  background-color: #00628b;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.secondary-gray-pin {
+  color: #e5e7eb;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+}
+
+
+/* ── RESPONSIVE ADAPTATIONS ── */
+@media (max-width: 968px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .contact-heading {
+    font-size: 38px;
+  }
+}

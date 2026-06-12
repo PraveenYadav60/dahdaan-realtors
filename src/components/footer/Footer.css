@@ -1,0 +1,250 @@
+/* ── MAIN FOOTER BACKGROUND ── */
+.site-footer {
+  background-color: #009fff; /* The exact vibrant blue color from your design */
+  color: #ffffff;
+  padding: 50px 0 20px 0;
+  width: 100%;
+}
+.footer{
+    width: 100%;
+    background-color: #009fff;
+}
+
+.footer-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+
+}
+
+/* ── TOP LINKS BAR ── */
+.footer-top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.footer-top-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.footer-top-nav a:hover {
+  opacity: 0.8;
+}
+
+/* ── MAIN BODY COLUMNS GRID ── */
+.footer-main-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: start;
+  margin-bottom: 50px;
+}
+
+/* Left Column: Office Blocks & Socials */
+.footer-left-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.office-info-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 45px;
+}
+
+.office-col h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: 0.3px;
+}
+
+.office-col p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.95);
+}
+
+/* Social Media Circles Row */
+.social-icons-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-circle-item {
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-circle-item:hover {
+  transform: scale(1.1);
+}
+
+/* ── RIGHT COLUMN: ENQUIRY BOX CONTAINER ── */
+.enquiry-outer-frame {
+  width: 70%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.enquiry-inner-card {
+  /* width: 80%; */
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Banner Header */
+.enquiry-form-title {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 24px;
+  border-radius: 2px;
+}
+
+/* Form Element stack */
+.enquiry-fields-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 180px;
+}
+
+.enquiry-form-field {
+  width: 100%;
+  height: 46px;
+  background-color: #66c2ff; /* Sky blue matching tone inputs */
+  border: none;
+  border-radius: 4px;
+  padding: 0 16px;
+  font-size: 12px;
+  color: #111111;
+  font-family: inherit;
+}
+
+.enquiry-form-field::placeholder {
+  color: #445566;
+  font-weight: 500;
+}
+
+.enquiry-form-field:focus {
+  outline: none;
+  background-color: #7cd0ff;
+}
+
+/* Submit Black Button */
+.enquiry-black-submit {
+  width: 130px;
+  height: 30px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 8px;
+  transition: background-color 0.15s;
+}
+
+.enquiry-black-submit:hover {
+  background-color: #1a1a1a;
+}
+
+/* Divider configuration */
+.form-center-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.form-center-divider::before,
+.form-center-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.form-center-divider:not(:empty)::before {
+  margin-right: .75em;
+}
+
+.form-center-divider:not(:empty)::after {
+  margin-left: .75em;
+}
+
+/* Bottom Call Button Banner */
+.enquiry-black-call-anchor {
+  width: 100%;
+  height: 30px;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 4px;
+  transition: background-color 0.15s;
+}
+
+.enquiry-black-call-anchor:hover {
+  background-color: #1a1a1a;
+}
+
+/* ── BOTTOM COPYRIGHT AREA ── */
+.footer-bottom-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 24px;
+}
+
+.footer-copyright-text {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 0.2px;
+}
+
+/* ── RESPONSIVE DESIGN ── */
+@media (max-width: 868px) {
+  .footer-main-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .office-info-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
